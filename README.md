@@ -1,2 +1,2 @@
 # wordle-clone
- Wordle Clone
+ Live version : https://wordle-web.herokuapp.com/website/index.html
