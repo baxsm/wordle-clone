@@ -15300,7 +15300,14 @@ const guessGrid = document.querySelector("[data-guess-grid");
 const offsetFromDate = new Date(2022, 0, 1);
 const msOffset = Date.now() - offsetFromDate;
 const dayOffset = msOffset / 1000 / 60 / 60 / 24;
-const targetWord = targetWords[Math.floor(dayOffset)];
+const getIndex = Math.floor(dayOffset + Math.random() * targetWords.length - 1);
+var targetWord;
+if(getIndex < targetWords.length) {
+    targetWord = targetWords[getIndex];
+}
+else{
+    targetWord = targetWords[getIndex - Math.random() * 50];
+}
 
 startInteraction();
 
