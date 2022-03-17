@@ -15332,7 +15332,7 @@ function handleMouseClick(e) {
         return;
     }
 
-    if(e.target.matches("[data-delete]")) {
+    if(e.target.tagName === "svg") {
         deleteKey();
         return;
     }
